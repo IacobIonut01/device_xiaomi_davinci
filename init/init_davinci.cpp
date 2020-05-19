@@ -105,6 +105,7 @@ void vendor_load_properties() {
         fingerprint = "Xiaomi/davinciin/davinciin:10/QKQ1.190825.002/V11.0.3.0.QFJINXM:user/release-keys";
         description = "davinciin-user 10 QKQ1.190825.002 V11.0.3.0.QFJINXM release-keys";
         mod_device = "davinciin_in_global";
+        property_override("ro.boot.product.hardware.sku", "davinciin");
     }
 
     // SafetyNet workaround

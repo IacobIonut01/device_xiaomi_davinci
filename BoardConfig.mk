@@ -128,6 +128,11 @@ BOARD_KERNEL_CMDLINE += loop.max_part=16
 TARGET_USES_ION := true
 TARGET_DISABLED_UBWC := true
 
+ODM_MANIFEST_SKUS += \
+    davinciin
+
+ODM_MANIFEST_DAVINCIIN_FILES := $(DEVICE_PATH)/manifest_davinciin.xml
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
