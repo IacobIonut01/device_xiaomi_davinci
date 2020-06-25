@@ -31,7 +31,8 @@ target=`getprop ro.board.platform`
 
 function configure_zram_parameters() {
     # Set Zram disk size=1GB for >=2GB Non-Go targets.
-    echo 1073741824 > /sys/block/zram0/disksize
+    # For this time, set Zram disk size to 3GB (half of total RAM)
+    echo 3221225472 > /sys/block/zram0/disksize
     mkswap /dev/block/zram0
     swapon /dev/block/zram0 -p 32758
 }
